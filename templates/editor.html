@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Заметки</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+</head>
+<body>
+    <nav class="navbar is-dark">
+        <div class="navbar-brand">
+            <a href="{% url 'editor' %}" class="navbar-item">Заметки</a>
+        </div>
+        
+        <div class="navbar-menu">
+            <div class="navbar-end">
+                <a href="{% url 'editor' %}?noteid=0" class="navbar-item">Новая заметка</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="columns">
+            <div class="column is-2">
+                <aside class="menu">
+                    <p class="menu-label">Заметки</p>
+                    
+                    <ul class="menu-list">
+                        {% for note in notes %}
+                        <li>
+                            <a href="{% url 'editor' %}?noteid={{ note.id }}">{{ note.title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </aside>
+            </div>
+            
+            <div class="column is-10">
+                <form method="post" action="{% url 'editor' %}">
+                    {% csrf_token %}
+                    
+                    <input type="hidden" name="noteid" value="{{ noteid }}">
+                    
+                    <div class="field">
+                        <label class="label">
+                            Название
+                            &emsp;&emsp;
+                            {% if note %}
+                                <span class="has-text-grey-light">
+                                    Создано: {{ note.created_at|date:"H:i:s d.m.y" }}
+                                    &emsp;
+                                    Изменено: {{ note.modified_at|date:"H:i:s d.m.y" }}
+                                </span>
+                            {% endif %}
+                        </label>
+                        
+                        <div class="control">
+                            <input type="text" class="input" name="title" placeholder="Введите название заметки"{% if note %} value="{{ note.title }}"{% endif %}>
+                        </div>
+                    </div>
+                
+                    <div class="field">
+                        <label class="label">Содержание</label>
+                        
+                        <div class="control">
+                            <textarea class="textarea" name="content" placeholder="Введите содержание заметки (опционально)">{% if note.content %}{{ note.content }}{% endif %}</textarea>
+                        </div>
+                    </div>
+                
+                    <div class="field is-grouped is-grouped-centered">
+                        <div class="control">
+                            <button class="button is-primary">Сохранить</button>
+                        </div>
+                        
+                        {% if note %} 
+                            <div class="control">
+                                <a href="{% url 'delete_note' note.id %}" class="button is-danger">Удалить</a>
+                            </div>
+                        {% endif %}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

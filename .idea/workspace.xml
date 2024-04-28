@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3d86d854-9717-45a2-886c-1449a73d0110" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/VKtestTask.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VKtestTask/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VKtestTask/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VKtestTask/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VKtestTask/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VKtestTask/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notesBoard/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notesBoard/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notesBoard/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notesBoard/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notesBoard/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notesBoard/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notesBoard/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/editor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKtestTask/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/VKtestTask/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VKtestTask/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/VKtestTask/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notesBoard/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/notesBoard/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notesBoard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/notesBoard/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notesBoard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/notesBoard/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,7 +37,9 @@
   "associatedIndex": 7
 }]]></component>
   <component name="ProjectId" id="2fbIfqsBjQYeD3NNLvbtrMt6LAm" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,6 +49,7 @@
     "Django Server.VKtestTask.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "django.template.preview.state": "SHOW_EDITOR",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -97,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714063456317</updated>
-      <workItem from="1714063457656" duration="389000" />
+      <workItem from="1714063457656" duration="21398000" />
     </task>
     <servers />
   </component>

@@ -18,6 +18,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from notesBoard.views import editor, delete_note
+
 urlpatterns = [
-    path("admin/", admin.site.urls),
+    path('', editor, name='editor'),
+    path('delete_note/<int:noteid>/', delete_note, name='delete_note'),
+    path('admin/', admin.site.urls),
 ]
